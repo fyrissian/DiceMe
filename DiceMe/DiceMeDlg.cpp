@@ -6,6 +6,7 @@
 #include "DiceMe.h"
 #include "DiceMeDlg.h"
 #include "afxdialogex.h"
+#include "PRNG.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -83,6 +84,7 @@ END_MESSAGE_MAP()
 
 BOOL CDiceMeDlg::OnInitDialog()
 {
+	initQ();
 	CDialogEx::OnInitDialog();
 
 	// Add "About..." menu item to system menu.
@@ -169,22 +171,34 @@ HCURSOR CDiceMeDlg::OnQueryDragIcon()
 void CDiceMeDlg::OnBnClickedRolldie()
 {
 	// TODO: Add your control notification handler code here
+	CString roll;
+	unsigned int newRnd = MWC256();
 	switch(die_Selected)
 	{
 		case 0: // d2
-			resultsList.AddString(_T("2"));
+			newRnd %= 2;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
 			break;
 		case 1: //d3
-			resultsList.AddString(_T("3"));
+			newRnd %= 3;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
 			break;
 		case 2: // d4
-			resultsList.AddString(_T("4"));
+			newRnd %= 4;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
 			break;
 		case 3: //d5
-			resultsList.AddString(_T("5"));
+			newRnd %= 5;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
 			break;
 		case 4: //d6
-			resultsList.AddString(_T("6"));
+			newRnd %= 6;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
 			break;
 	}
 }

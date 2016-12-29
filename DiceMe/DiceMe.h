@@ -1,5 +1,5 @@
 
-// DiceMe.h : main header file for the PROJECT_NAME application
+// DiceMe.h : main header file for the DiceMe application
 //
 
 #pragma once

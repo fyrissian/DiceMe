@@ -4,6 +4,8 @@
 // but are changed infrequently
 
 #pragma once
+#define _CRT_RAND_S
+#include <stdlib.h>
 
 #ifndef _SECURE_ATL
 #define _SECURE_ATL 1
