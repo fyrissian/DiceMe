@@ -77,6 +77,29 @@ BEGIN_MESSAGE_MAP(CDiceMeDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_D5, &CDiceMeDlg::OnBnClickedD5)
 	ON_BN_CLICKED(IDC_D6, &CDiceMeDlg::OnBnClickedD6)
 	ON_BN_CLICKED(IDC_CLEARRESULTS, &CDiceMeDlg::OnBnClickedClearresults)
+	ON_BN_CLICKED(IDC_D7, &CDiceMeDlg::OnBnClickedD7)
+	ON_BN_CLICKED(IDC_D8, &CDiceMeDlg::OnBnClickedD8)
+	ON_BN_CLICKED(IDC_D9, &CDiceMeDlg::OnBnClickedD9)
+	ON_BN_CLICKED(IDC_D10, &CDiceMeDlg::OnBnClickedD10)
+	ON_BN_CLICKED(IDC_D11, &CDiceMeDlg::OnBnClickedD11)
+	ON_BN_CLICKED(IDC_D12, &CDiceMeDlg::OnBnClickedD12)
+	ON_BN_CLICKED(IDC_D14, &CDiceMeDlg::OnBnClickedD14)
+	ON_BN_CLICKED(IDC_D15, &CDiceMeDlg::OnBnClickedD15)
+	ON_BN_CLICKED(IDC_D16, &CDiceMeDlg::OnBnClickedD16)
+	ON_BN_CLICKED(IDC_D18, &CDiceMeDlg::OnBnClickedD18)
+	ON_BN_CLICKED(IDC_D20, &CDiceMeDlg::OnBnClickedD20)
+	ON_BN_CLICKED(IDC_D22, &CDiceMeDlg::OnBnClickedD22)
+	ON_BN_CLICKED(IDC_D24, &CDiceMeDlg::OnBnClickedD24)
+	ON_BN_CLICKED(IDC_D25, &CDiceMeDlg::OnBnClickedD25)
+	ON_BN_CLICKED(IDC_D30, &CDiceMeDlg::OnBnClickedD30)
+	ON_BN_CLICKED(IDC_D40, &CDiceMeDlg::OnBnClickedD40)
+	ON_BN_CLICKED(IDC_D50, &CDiceMeDlg::OnBnClickedD50)
+	ON_BN_CLICKED(IDC_D100, &CDiceMeDlg::OnBnClickedD100)
+	ON_BN_CLICKED(IDC_D500, &CDiceMeDlg::OnBnClickedD500)
+	ON_BN_CLICKED(IDC_D1000, &CDiceMeDlg::OnBnClickedD1000)
+	ON_BN_CLICKED(IDC_D5000, &CDiceMeDlg::OnBnClickedD5000)
+	ON_BN_CLICKED(IDC_D10000, &CDiceMeDlg::OnBnClickedD10000)
+	ON_BN_CLICKED(IDC_CUSTOM, &CDiceMeDlg::OnBnClickedCustom)
 END_MESSAGE_MAP()
 
 
@@ -200,6 +223,122 @@ void CDiceMeDlg::OnBnClickedRolldie()
 			roll.Format(_T("%d"), newRnd+1);
 			resultsList.AddString(roll); 
 			break;
+		case 5: //d7
+			newRnd %= 7;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 6: //d8
+			newRnd %= 8;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 7: //d9
+			newRnd %= 9;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 8: //d10
+			newRnd %= 10;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 9: //d11
+			newRnd %= 11;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 10: //d12
+			newRnd %= 12;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 11: //d14
+			newRnd %= 14;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 12: //d15
+			newRnd %= 15;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 13: //d16
+			newRnd %= 16;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 14: //d18
+			newRnd %= 18;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 15: //d20
+			newRnd %= 20;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 16: //d22
+			newRnd %= 22;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 17: //d24
+			newRnd %= 24;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 18: //d25
+			newRnd %= 25;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 19: //d30
+			newRnd %= 30;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 20: //d40
+			newRnd %= 40;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 21: //d50
+			newRnd %= 50;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 22: //d100
+			newRnd %= 100;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 23: //d500
+			newRnd %= 500;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 24: //d1000
+			newRnd %= 1000;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 25: //d5000
+			newRnd %= 5000;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 26: //d10000
+			newRnd %= 10000;
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+		case 27: //dCustom
+			newRnd %= 777; // using test value of 777 until custom input field implemented
+			roll.Format(_T("%d"), newRnd+1);
+			resultsList.AddString(roll); 
+			break;
+
 	}
 }
 
@@ -251,4 +390,165 @@ void CDiceMeDlg::OnBnClickedClearresults()
 {
 	// TODO: Add your control notification handler code here
 	resultsList.ResetContent();
+}
+
+
+void CDiceMeDlg::OnBnClickedD7()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 5;
+}
+
+
+void CDiceMeDlg::OnBnClickedD8()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 6;
+}
+
+
+void CDiceMeDlg::OnBnClickedD9()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 7;
+}
+
+
+void CDiceMeDlg::OnBnClickedD10()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 8;
+}
+
+
+void CDiceMeDlg::OnBnClickedD11()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 9;
+}
+
+
+void CDiceMeDlg::OnBnClickedD12()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 10;
+}
+
+
+void CDiceMeDlg::OnBnClickedD14()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 11;
+}
+
+
+void CDiceMeDlg::OnBnClickedD15()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 12;
+}
+
+
+void CDiceMeDlg::OnBnClickedD16()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 13;
+}
+
+
+void CDiceMeDlg::OnBnClickedD18()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 14;
+}
+
+
+void CDiceMeDlg::OnBnClickedD20()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 15;
+}
+
+
+void CDiceMeDlg::OnBnClickedD22()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 16;
+}
+
+
+void CDiceMeDlg::OnBnClickedD24()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 17;
+}
+
+
+void CDiceMeDlg::OnBnClickedD25()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 18;
+}
+
+
+void CDiceMeDlg::OnBnClickedD30()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 19;
+}
+
+
+void CDiceMeDlg::OnBnClickedD40()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 20;
+}
+
+
+void CDiceMeDlg::OnBnClickedD50()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 21;
+}
+
+
+void CDiceMeDlg::OnBnClickedD100()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 22;
+}
+
+
+void CDiceMeDlg::OnBnClickedD500()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 23;
+}
+
+
+void CDiceMeDlg::OnBnClickedD1000()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 24;
+}
+
+
+void CDiceMeDlg::OnBnClickedD5000()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 25;
+}
+
+
+void CDiceMeDlg::OnBnClickedD10000()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 26;
+}
+
+
+void CDiceMeDlg::OnBnClickedCustom()
+{
+	// TODO: Add your control notification handler code here
+	die_Selected = 27;
 }
